@@ -1,0 +1,52 @@
+package com.payslip.response;
+
+public class PaySlipResponse {
+
+	private DeductionsResponse deductionsResponse;
+	private EarningsResponse earningsResponse;
+	private NetPayResponse netPayResponse;
+	private PersonalResponse personalResponse;
+	
+	public PaySlipResponse(DeductionsResponse deductionsResponse, EarningsResponse earningsResponse,
+			NetPayResponse netPayResponse, PersonalResponse personalResponse) {
+		super();
+		this.deductionsResponse = deductionsResponse;
+		this.earningsResponse = earningsResponse;
+		this.netPayResponse = netPayResponse;
+		this.personalResponse = personalResponse;
+	}
+
+	public DeductionsResponse getDeductionsResponse() {
+		return deductionsResponse;
+	}
+
+	public void setDeductionsResponse(DeductionsResponse deductionsResponse) {
+		this.deductionsResponse = deductionsResponse;
+	}
+
+	public EarningsResponse getEarningsResponse() {
+		return earningsResponse;
+	}
+
+	public void setEarningsResponse(EarningsResponse earningsResponse) {
+		this.earningsResponse = earningsResponse;
+	}
+
+	public NetPayResponse getNetPayResponse() {
+		return netPayResponse;
+	}
+
+	public void setNetPayResponse(NetPayResponse netPayResponse) {
+		this.netPayResponse = netPayResponse;
+	}
+
+	public PersonalResponse getPersonalResponse() {
+		return personalResponse;
+	}
+
+	public void setPersonalResponse(PersonalResponse personalResponse) {
+		this.personalResponse = personalResponse;
+	}
+	
+	
+}
